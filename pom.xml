@@ -103,7 +103,7 @@
                     <format>html</format>
                     <format>xml</format>
                 </formats>
-                <outputDirectory>${project.build.directory}/coberturaReport</outputDirectory>  
+              <!--  <outputDirectory>${project.build.directory}/coberturaReport</outputDirectory>  -->
              </configuration>
      </plugin>     
    </plugins>
