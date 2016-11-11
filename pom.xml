@@ -89,10 +89,7 @@
           </execution>
         </executions>
       </plugin>
-    </plugins>
-  </build>
-
-  <reporting>
+           </plugins>
     <plugins>
       <plugin>
              <groupId>org.codehaus.mojo</groupId>
@@ -100,13 +97,13 @@
             <version>2.7</version>
              <configuration>        
                 <formats>
-                    <!-- <format>html</format> -->
+                    <format>html</format> 
                     <format>xml</format>
                 </formats>
-              <!--  <outputDirectory>${project.build.directory}/coberturaReport</outputDirectory>  -->
+                <outputDirectory>${project.build.directory}/coberturaReport</outputDirectory>
              </configuration>
      </plugin>     
    </plugins>
-  </reporting>
+  </build>
 
 </project>
