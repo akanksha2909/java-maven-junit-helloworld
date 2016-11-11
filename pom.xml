@@ -100,6 +100,23 @@
                 </formats>
                 <outputDirectory>${project.build.directory}/coberturaReport</outputDirectory>
              </configuration>
+              <check>
+                     <branchRate>85</branchRate>
+                     <lineRate>85</lineRate>
+                     <haltOnFailure>true</haltOnFailure>
+                     <totalBranchRate>85</totalBranchRate>
+                     <totalLineRate>85</totalLineRate>
+                     <packageLineRate>85</packageLineRate>
+                     <packageBranchRate>85</packageBranchRate>   
+               </check>           
+                <executions>
+                   <execution>
+                     <goals>
+                       <goal>clean</goal>
+                       <goal>check</goal>
+                     </goals>
+                   </execution>
+              </executions>
      </plugin>     
    </plugins>
   </build>
