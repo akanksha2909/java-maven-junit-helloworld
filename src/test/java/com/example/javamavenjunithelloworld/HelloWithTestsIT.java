@@ -22,13 +22,13 @@ public class HelloWithTestsIT {
     @Rule
     public final StandardOutputStreamLog out = new StandardOutputStreamLog();
 
-    @Test
+   /* @Test
     public void doesItSayHelloTest() {
         String[] args = {"1"};
         HelloApp.main(args);
 
         assertThat(out.getLog(), is(equalTo(Hello.HELLO + "\n")));
-    }
+    }*/
 
    @Test
     public void doesItSayHelloTest3() {
