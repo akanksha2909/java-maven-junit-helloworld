@@ -113,7 +113,7 @@
      <plugin>
          <groupId>com.hello2morrow.sonargraph</groupId>
          <artifactId>maven-sonargraph-plugin</artifactId>
-          <version>7.2.3</version>
+          <version>1.6.4</version>
          <configuration>
        <!-- configuration properties are described below - 
 
