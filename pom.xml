@@ -115,6 +115,7 @@
          <artifactId>maven-sonargraph-plugin</artifactId>
           <version>7.2.3</version>
          <configuration>
+                  <license>D:\Sonargraph-Architect-7.2.3-windows64\Sonargraph.license</license>
        <!-- configuration properties are described below - 
 
            none is mandatory -->
