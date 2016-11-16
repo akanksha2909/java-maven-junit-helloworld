@@ -101,6 +101,10 @@
              </configuration>             
      </plugin>     
    </plugins>
+   <pluginRepository>
+          <id>hello2morrow.maven.repository</id>
+          <url>http://maven.hello2morrow.com/repository</url>
+   </pluginRepository>
   </build>
 
 </project>
