@@ -99,12 +99,13 @@
                 </formats>
                 <outputDirectory>${project.build.directory}/coberturaReport</outputDirectory>
              </configuration>             
-     </plugin>     
-   </plugins>
-   <pluginRepository>
+     </plugin>  
+     <pluginRepository>
           <id>hello2morrow.maven.repository</id>
           <url>http://maven.hello2morrow.com/repository</url>
    </pluginRepository>
+   </plugins>
+   
   </build>
 
 </project>
