@@ -8,7 +8,7 @@
   <artifactId>java-maven-junit-helloworld</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
-
+   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -48,7 +48,12 @@
       </exclusions>
     </dependency>
   </dependencies>
-
+  <pluginRepositories>
+          <pluginRepository>
+          <id>hello2morrow.maven.repository</id>
+          <url>http://maven.hello2morrow.com/repository</url>
+          </pluginRepository>
+   </pluginRepositories>
   <build>
     <plugins>
       <plugin>
@@ -100,12 +105,9 @@
                 <outputDirectory>${project.build.directory}/coberturaReport</outputDirectory>
              </configuration>             
      </plugin>  
-     <pluginRepository>
-          <id>hello2morrow.maven.repository</id>
-          <url>http://maven.hello2morrow.com/repository</url>
-   </pluginRepository>
+              
    </plugins>
    
   </build>
-
+  
 </project>
