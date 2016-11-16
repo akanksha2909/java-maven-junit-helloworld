@@ -104,7 +104,32 @@
                 </formats>
                 <outputDirectory>${project.build.directory}/coberturaReport</outputDirectory>
              </configuration>             
-     </plugin>  
+     </plugin> 
+     <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>2.2</version>
+    </plugin>
+             <plugins>
+     <plugin>
+         <groupId>com.hello2morrow.sonargraph</groupId>
+         <artifactId>maven-sonargraph-plugin</artifactId>
+          <version>7.2.3</version>
+         <configuration>
+       <!-- configuration properties are described below - 
+
+           none is mandatory -->
+         </configuration>
+         <executions>
+                  <execution>
+                  <goals>
+                            <goal>architect-report-verify</goal>
+                  </goals>
+                  </execution>
+          </executions>
+      </plugin>
+   
+  </plugins>
               
    </plugins>
    
