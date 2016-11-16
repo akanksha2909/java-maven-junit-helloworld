@@ -109,8 +109,7 @@
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>sonar-maven-plugin</artifactId>
             <version>2.2</version>
-    </plugin>
-             <plugins>
+    </plugin>     
      <plugin>
          <groupId>com.hello2morrow.sonargraph</groupId>
          <artifactId>maven-sonargraph-plugin</artifactId>
@@ -131,8 +130,7 @@
    
   </plugins>
               
-   </plugins>
-   
+    
   </build>
   
 </project>
