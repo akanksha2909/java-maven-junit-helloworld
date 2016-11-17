@@ -124,7 +124,7 @@
          <executions>
                   <execution>
                   <goals>
-                            <goal>architect-report-verify</goal>
+                            <goal>architect-report</goal>
                   </goals>
                   </execution>
           </executions>
