@@ -101,7 +101,7 @@
                 <formats>
                     <format>html</format> 
                     <format>xml</format>
-                    <format>zip</format>
+                    <format>summaryXml</format>
                 </formats>
                 <outputDirectory>${project.build.directory}/coberturaReport</outputDirectory>
              </configuration>             
