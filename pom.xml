@@ -18,7 +18,7 @@
 	
   
    <!--  addition -->  
-	<groupId>org.jenkins-ci.plugins</groupId>
+	<!--<groupId>org.jenkins-ci.plugins</groupId>
 	    <artifactId>quality-gates</artifactId>
 	    <name>Quality Gates Plugin</name>
 	    <url>https://wiki.jenkins-ci.org/display/JENKINS/Quality+Gates+Plugin</url>
@@ -45,7 +45,7 @@
 		</license>
 	    </licenses>
       
-	      
+	      -->
 		
 	   
   <properties>
@@ -195,12 +195,12 @@
                   </execution>
           </executions>
       </plugin>-->
-	  <!--  <plugin>
+	 <plugin>
 	      
    		 <groupId>org.jenkins-ci.plugins</groupId>
   		<artifactId>quality-gates</artifactId>
 
-    		<url>https://wiki.jenkins-ci.org/display/JENKINS/Quality+Gates+Plugin</url>
+    		<!--<url>https://wiki.jenkins-ci.org/display/JENKINS/Quality+Gates+Plugin</url>-->
  		 <version>2.5-SNAPSHOT</version>
   		  <executions>
 		  <execution>
@@ -233,7 +233,7 @@
 	
 		
 		</configuration>    	 
-	    </plugin> -->
+	    </plugin> 
 	   
     
           
