@@ -129,7 +129,7 @@
 	    <plugin>
 	      
    		 <groupId>org.jenkins-ci.plugins</groupId>
-  		<artifactId>quality-gates-main</artifactId>
+  		<artifactId>quality-gates-plugin</artifactId>
 
   		<!--<url>https://wiki.jenkins-ci.org/display/JENKINS/Quality+Gates+Plugin</url>-->
  		 <version>2.5-SNAPSHOT</version>
