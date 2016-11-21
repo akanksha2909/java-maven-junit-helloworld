@@ -9,6 +9,8 @@
         <version>2.0</version>
         <relativePath />
     </parent> 
+	
+
   <groupId>com.example</groupId>
   <artifactId>java-maven-junit-helloworld</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -16,7 +18,33 @@
 	
   
    <!--  addition -->  
-	      
+	<groupId>org.jenkins-ci.plugins</groupId>
+	    <artifactId>quality-gates</artifactId>
+	    <name>Quality Gates Plugin</name>
+	    <url>https://wiki.jenkins-ci.org/display/JENKINS/Quality+Gates+Plugin</url>
+	    <version>2.5-SNAPSHOT</version>
+	    <description>Fails the build whenever the Quality Gates criteria in the Sonar analysis aren't met (the project Quality Gates status is different than "Passed")</description>
+	    <packaging>hpi</packaging>
+
+	    <distributionManagement>
+		<repository>
+		    <id>maven.jenkins-ci.org</id>
+		    <url>http://maven.jenkins-ci.org:8081/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+		    <id>maven.jenkins-ci.org</id>
+		    <url>http://maven.jenkins-ci.org:8081/content/repositories/snapshots</url>
+		</snapshotRepository>
+	    </distributionManagement>
+
+	    <licenses>
+		<license>
+		    <name>MIT License</name>
+		    <url>http://www.opensource.org/licenses/mit-license.php</url>
+		    <distribution>repo</distribution>
+		</license>
+	    </licenses>
+      
 	      
 		
 	   
@@ -167,12 +195,12 @@
                   </execution>
           </executions>
       </plugin>-->
-	    <plugin>
+	  <!--  <plugin>
 	      
    		 <groupId>org.jenkins-ci.plugins</groupId>
   		<artifactId>quality-gates</artifactId>
 
-  		<!--<url>https://wiki.jenkins-ci.org/display/JENKINS/Quality+Gates+Plugin</url>-->
+    		<url>https://wiki.jenkins-ci.org/display/JENKINS/Quality+Gates+Plugin</url>
  		 <version>2.5-SNAPSHOT</version>
   		  <executions>
 		  <execution>
@@ -205,7 +233,7 @@
 	
 		
 		</configuration>    	 
-	    </plugin>
+	    </plugin> -->
 	   
     
           
