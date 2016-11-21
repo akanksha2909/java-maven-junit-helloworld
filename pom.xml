@@ -133,7 +133,14 @@
 
   		<!--<url>https://wiki.jenkins-ci.org/display/JENKINS/Quality+Gates+Plugin</url>-->
  		 <version>2.5-SNAPSHOT</version>
-  
+  		  <executions>
+		  <execution>
+		    <goals>
+		      
+		      <goal>quality-gates</goal>
+		    </goals>
+		  </execution>
+		</executions>
                  <configuration>
   
                  <licenses>
