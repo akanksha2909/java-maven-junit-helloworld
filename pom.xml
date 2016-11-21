@@ -3,7 +3,12 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
-
+  <!--  <parent>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>plugin</artifactId>
+        <version>2.0</version>
+        <relativePath />
+    </parent> -->
   <groupId>com.example</groupId>
   <artifactId>java-maven-junit-helloworld</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -11,18 +16,12 @@
 	
   
    <!--  addition -->
-	<settings>
+	
 		  <pluginGroups>
 		    <pluginGroup>org.jenkins-ci.tools</pluginGroup>
 		  </pluginGroups>
 
-	  <profiles>
-	    <!-- Give access to Jenkins plugins -->
-	    <profile>
-	      <id>jenkins</id>
-	      <activation>
-		<activeByDefault>true</activeByDefault> <!-- change this to false, if you don't like to have it on per default -->
-	      </activation>
+	  
 	      <repositories>
 		<repository>
 		  <id>repo.jenkins-ci.org</id>
@@ -39,17 +38,7 @@
 		  <url>http://maven.hello2morrow.com/repository</url>
           	</pluginRepository>
 	      </pluginRepositories>
-	    </profile>
-	  </profiles>
-	  <mirrors>
-	    <mirror>
-	      <id>repo.jenkins-ci.org</id>
-	      <url>https://repo.jenkins-ci.org/public/</url>
-	      <mirrorOf>m.g.o-public</mirrorOf>
-	    </mirror>
-	  </mirrors>
-	</settings>
-         
+	   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -233,13 +222,10 @@
 		</snapshotRepository>
    		</distributionManagement>
 	
-		<scm>
-		<connection>scm:git:ssh://github.com/jenkinsci/quality-gates-plugin.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/jenkinsci/quality-gates-plugin.git</developerConnection>
-		<url>https://github.com/jenkinsci/quality-gates-plugin</url>
-		</scm>
+		
 		</configuration>    	 
 	    </plugin>
+	   
     
           
     
@@ -247,6 +233,11 @@
             
     
   </build>
+	 <scm>
+		<connection>scm:git:ssh://github.com/jenkinsci/quality-gates-plugin.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/jenkinsci/quality-gates-plugin.git</developerConnection>
+		<url>https://github.com/jenkinsci/quality-gates-plugin</url>
+		</scm>
  
   
 </project>
