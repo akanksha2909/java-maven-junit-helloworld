@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  */
 public class HelloTest {
 
-  /* @Test
+   @Test
     public void testSayHello() {
         OutputStream os = new ByteArrayOutputStream();
         PrintStream stream = new PrintStream(os, true);
@@ -39,7 +39,7 @@ public class HelloTest {
         // Does it say "Hello!" three times?
         String goal = Hello.HELLO + "\n" + Hello.HELLO + "\n" + Hello.HELLO + "\n";
         assertThat(os.toString(), is(equalTo(goal)));
-    } */
+    } 
 
     @Test(expected = IllegalArgumentException.class)
     public void testIllegalArgumentForHello21() {
