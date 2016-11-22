@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  */
 public class HelloTest {
 
- /* @Test
+  @Test
     public void testSayHello() {
         OutputStream os = new ByteArrayOutputStream();
         PrintStream stream = new PrintStream(os, true);
@@ -27,7 +27,7 @@ public class HelloTest {
         assertThat(os.toString(), is(equalTo(Hello.HELLO + "\n")));
     }
 
-    @Test
+   /* @Test
     public void testSayHelloAFewTimes() {
         OutputStream os = new ByteArrayOutputStream();
         PrintStream stream = new PrintStream(os, true);
